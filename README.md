@@ -3,7 +3,7 @@ i18nextDemo
 This is a simple demo for me to play around with http://i18next.com/.  You will need to install http://nodejs.org/ for
 this to work
 
-How to clone, build, and run
+Clone, build, and run like so
 ```
 git clone https://github.com/FrankHassanabad/i18nextDemo.git
 cd i18nextDemo
