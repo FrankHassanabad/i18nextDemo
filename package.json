@@ -1,7 +1,10 @@
 {
     "name": "i18nextDemo",
     "description": "Demo of i18next",
-    "version": "0.0.1",
+    "homepage": "https://github.com/FrankHassanabad/i18nextDemo",
+    "repository": "https://github.com/FrankHassanabad/i18nextDemo",
+    "version": "1.0.0",
+    "license": "MIT",
     "private": true,
     "dependencies": {
         "express": "3.2.5"
