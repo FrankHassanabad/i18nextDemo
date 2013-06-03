@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>i18n Demo</title>
+    <link href="stylesheets/reset.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <script type="text/javascript" src="javascripts/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="javascripts/i18next-1.6.3.js"></script>
+</head>
+
+<body>
+
+<h1 id="h1-1"></h1>
+<p class="intro">
+    <span id="intro"></span>
+    <a href="http://localhost/?setLng=zh-CN\">http://localhost/?setLng=zh-CN</a>
+</p>
+<p class="intro">
+    <span id="intro-2"></span>
+    <a href="http://localhost/?setLng=en-US\">http://localhost/?setLng=en-US</a>
+</p>
+<h2 id="h2-1"></h2>
+<p id="p-1"></p>
+<p id="p-2"></p>
+<h2 id="h2-2"></h2>
+<p id="p-3"></p>
+<p id="p-4"></p>
+
+<script>
+    (function() {
+        i18n.init({getAsync: false}, function() {
+            $("#h1-1").text($.t("h1-1"));
+            $("#intro").text($.t("intro"));
+            $("#intro-2").text($.t("intro-2"));
+            $("#h2-1").text($.t("h2-1"));
+            $("#h2-2").text($.t("h2-2"));
+            $("#p-1").text($.t("p-1"));
+            $("#p-2").text($.t("p-2"));
+            $("#p-3").text($.t("p-3"));
+            $("#p-4").text($.t("p-4"));
+        });
+    })();
+</script>
+
+</body>
+</html>
